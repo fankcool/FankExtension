@@ -12,17 +12,18 @@ public protocol StoryboardLoadable { }
 
 public extension StoryboardLoadable {
     
-    static func loadFromStoryboard() -> Self? {
+    static func loadFromStoryboard(name: String = "\(Self.self)") -> Self? {
         
         var sef : Self?
         
         let currentBundle = Bundle(for: self as! AnyClass)
         
-        if let vc = UIStoryboard(name: "\(String(describing: self))", bundle: currentBundle).instantiateInitialViewController() {
+        let storyboard = UIStoryboard(name: name, bundle: currentBundle)
+        
+        if let vc = storyboard.instantiateInitialViewController() {
             sef = vc as? Self
         } else {
-            let vc = UIStoryboard(name: "\(String(describing: self))", bundle: currentBundle).instantiateViewController(withIdentifier: "\(String(describing: self))")
-            sef = vc as? Self
+            sef = storyboard.instantiateViewController(withIdentifier: "\(String(describing: self))") as? Self
         }
         
         return sef
