@@ -13,6 +13,7 @@
 		349F818D22346F0A00FCD8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349F818C22346F0A00FCD8CF /* Assets.xcassets */; };
 		349F819022346F0A00FCD8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349F818E22346F0A00FCD8CF /* LaunchScreen.storyboard */; };
 		349F81982234712600FCD8CF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F81972234712600FCD8CF /* UIViewExtension.swift */; };
+		349F81A52234977F00FCD8CF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F81A42234977F00FCD8CF /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		349F818F22346F0A00FCD8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		349F819122346F0A00FCD8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349F81972234712600FCD8CF /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		349F81A42234977F00FCD8CF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				349F818E22346F0A00FCD8CF /* LaunchScreen.storyboard */,
 				349F819122346F0A00FCD8CF /* Info.plist */,
 				349F81972234712600FCD8CF /* UIViewExtension.swift */,
+				349F81A42234977F00FCD8CF /* Extension.swift */,
 			);
 			path = FankExtension;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				349F81982234712600FCD8CF /* UIViewExtension.swift in Sources */,
 				349F818822346F0900FCD8CF /* ViewController.swift in Sources */,
 				349F818622346F0900FCD8CF /* AppDelegate.swift in Sources */,
+				349F81A52234977F00FCD8CF /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
